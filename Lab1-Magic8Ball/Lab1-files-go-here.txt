@@ -1,0 +1,118 @@
+import random
+import time
+print("Welcome to the Magic 8ball, here to answer any and all questions")
+time.sleep(3)
+print("It will only take a few seconds to answer what you want to know most")
+time.sleep(4)
+print("I am now ready to answer your question")
+time.sleep(4)
+input("Enter your question here ")
+time.sleep(4)
+print("Thinking...")
+
+user_response = random.randint(0,50)
+
+if user_response  == 1:
+    print("Great question. Of course.")
+elif user_response == 2:
+    print("Sure thing!")
+elif user_response == 3:
+    print("I'm sorry, that won't happen")
+elif user_response == 4:
+    print("No")
+elif user_response == 5:
+    print("It's possible")
+elif user_response == 6:
+    print("Maybe")
+elif user_response == 7:
+    print("yes")
+elif user_response == 8:
+    print("Impossible")
+elif user_response == 9:
+    print("Probable")
+elif user_response == 10:
+    print("Not probable")
+elif user_response == 11:
+    print("Sure thing!")
+elif user_response == 12:
+    print("Yes")
+elif user_response == 13:
+    print("Likely")
+elif user_response == 14:
+    print("Not likely")
+elif user_response == 15:
+    print("Sure thing!")
+elif user_response == 16:
+    print("Nope")
+elif user_response == 17:
+    print("Anything could happen.")
+elif user_response == 18:
+    print("Most likely.")
+elif user_response == 19:
+    print("That is not possible for you.")
+elif user_response == 20:
+    print("Cannot happen.")
+elif user_response == 21:
+    print("Sure thing!")
+elif user_response == 22:
+    print("No")
+elif user_response == 23:
+    print("Not in your future")
+elif user_response == 24:
+    print("In your future")
+elif user_response == 25:
+    print("I do not know")
+elif user_response == 24:
+    print("I do not understand.")
+elif user_response == 25:
+    print("Cannot compute.")
+elif user_response == 26:
+    print("You have a shot!")
+elif user_response == 27:
+    print("You do not have a shot.")
+elif user_response == 28:
+    print("You should find something else")
+elif user_response == 29:
+    print("No")
+elif user_response == 30:
+    print("Yes")
+elif user_response == 31:
+    print("Maybe")
+elif user_response == 32:
+    print("You should rethink your options.")
+elif user_response == 33:
+    print("Maybe with willpower")
+elif user_response == 34:
+    print("That is fine.")
+elif user_response == 35:
+    print("That is not fine.")
+elif user_response == 36:
+    print("Wonderful!")
+elif user_response == 37:
+    print("Perfect!")
+elif user_response == 38:
+    print("Wonderful!")
+elif user_response == 39:
+    print("Not wonderful.")
+elif user_response == 40:
+    print("Not the best idea.")
+elif user_response == 41:
+    print("Great idea!")
+elif user_response == 42:
+    print("Try something else.")
+elif user_response == 43:
+    print("Don't overthink it.")
+elif user_response == 44:
+    print("I am not sure.")
+elif user_response == 45:
+    print("That is smart!")
+elif user_response == 46:
+    print("That is not smart.")
+elif user_response == 47:
+    print("Ask a different question.")
+elif user_response == 48:
+    print("Icannot answer that.")
+elif user_response == 49:
+    print("Great choice!")
+elif user_response == 50:
+    print("I don't know about that")
