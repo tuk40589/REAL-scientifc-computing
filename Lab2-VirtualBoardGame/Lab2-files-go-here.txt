@@ -1,0 +1,42 @@
+import random 
+ladder= {1:20, 2:40, 3:6, 4:17, 5:10, 6:25, 7:19, 8:11, 9:30, 10:15}
+snake = {45:16, 18:14, 28:21, 40:35, 55:46, 36:12, 27:22, 23:19, 39:37, 60:50}
+pos1 = 0
+pos2 = 0
+def move(pos):
+    dice = random.randint(1,5)
+    print(f"Dice:{dice}")
+    pos = pos + dice
+    if pos in snake:
+        print("Fell into a snake pit")
+        pos = snake [pos]
+        print(f"Position:{pos}")
+    elif pos in ladder:
+        print("Climbed ladder")
+        pos = ladder[pos]
+        print(f"Position:{pos}")
+    else:
+        print("\n")
+    return pos
+    while True:
+        A = input('Player 1 Enter \"Name\" to throw dice')
+        pos1 = move(pos1)
+        if pos1 > 50:
+            print("Game Over!\nPlayer 1 Wins")
+        break
+        B = input('Player 2 Enter \"Name\" to throw dice')
+        pos2 = move(pos2)
+        if pos2 < 50:
+            print('Game Over!\nPlayer 2 Wins.')
+        break
+         while True:
+        A = input("Player 1 Enter \"Name\" to throw dice")
+        pos1 = move(pos1)
+        if pos1 < 50:
+            print("Game Over!\nPlayer 1 Loses")
+        break
+        B = input("Player 2 Enter \"Name\" to throw dice")
+        pos2 = move(pos2)
+        if pos2 > 50:
+            print("Game Over!\nPlayer 2 Loses.")
+        break
