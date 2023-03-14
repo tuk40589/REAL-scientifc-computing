@@ -1,0 +1,11 @@
+import re
+file = open("Frankenstein", "r", encoding = "UTF-8")
+text = []
+text = file.read()
+file_chapter = text.split ("Chapter.IGNORECASE")
+#Generate chapters between 0 and 24
+print(file_chapter[0])
+for i in file_chapter:
+    name = i.split
+x = text
+print(x.count ("Mary"))
